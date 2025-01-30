@@ -1,7 +1,7 @@
 export const MainLayout = () => {
     return (
         <>
-            Menu
+            menu
         </>
     );
 };
