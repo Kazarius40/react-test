@@ -1,9 +1,10 @@
-import {AuthorizationComponent} from "../components/AuthorizationComponent.tsx";
+import {AuthForm} from "../components/AuthForm.tsx";
 
 export const AuthorizationPage = () => {
     return (
         <>
-            <AuthorizationComponent/>
+            <h2>Авторизація</h2>
+            <AuthForm/>
         </>
     );
 };
