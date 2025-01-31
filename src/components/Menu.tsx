@@ -21,11 +21,10 @@ export const Menu = () => {
                 )}
                 {user && (
                     <>
+                        <img src={user.image} alt={user.username}/>
                         <li><Link to="/recipes">Рецепти</Link></li>
                         <li><Link to="/users">Користувачі</Link></li>
-                        <li>
-                            <button onClick={logoutHandler}>Logout</button>
-                        </li>
+                        <button onClick={logoutHandler}>Logout</button>
                     </>
                 )}
             </ul>

@@ -1,8 +1,9 @@
 import {createBrowserRouter} from "react-router-dom";
 import {MainLayout} from "../layouts/MainLayout.tsx";
-import {Users} from "../components/Users.tsx";
 import {Recipes} from "../components/Recipes.tsx";
 import {AuthorizationPage} from "../pages/AuthorizationPage.tsx";
+import {UsersPage} from "../pages/UsersPage.tsx";
+import {UserPage} from "../pages/UserPage.tsx";
 
 export const routes = createBrowserRouter([
     {
@@ -10,7 +11,8 @@ export const routes = createBrowserRouter([
         element: <MainLayout/>,
         children: [
             { path: 'auth', element: <AuthorizationPage/> },
-            { path: 'users', element: <Users/> },
+            { path: 'users', element: <UsersPage/> },
+            {path: '/users/:userId', element: <UserPage/>},
             { path: 'recipes', element: <Recipes/> },
         ],
     },
