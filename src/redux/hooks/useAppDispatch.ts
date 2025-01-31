@@ -1,0 +1,1 @@
+export const useAppDispatch = useDispatch.withTypes<typeof store.dispatch>();
